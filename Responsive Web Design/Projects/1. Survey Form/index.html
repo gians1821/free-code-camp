@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Formulario de Inscripción</h1>
+    <p id="description">(para participar en concurso de Street Fighter)</p>
+    <form id="survey-form">
+        <label id="name-label">
+            Nombre de tu personaje favorito: 
+            <input type="text" id="name" placeholder="Ryu..." required>
+        </label>
+        <label id="email-label">
+            Correo electrónico: 
+            <input type="email" id="email" placeholder="capcom@gmail.com" required>
+        </label>
+        <label id="number-label">
+            Meses jugando SF4: 
+            <input type="number" id="number" placeholder="1200" min="1" max="1200" required>
+        </label>
+
+        <label>
+            Videojuego favorito:
+            <select id="dropdown">
+                <option>Street Fighter</option>
+                <option>Street Fighter II: The World Warrior</option>
+                <option>Street Fighter III</option>
+                <option>Ultra Street Fighter IV</option>
+                <option>Street Fighter V</option>
+                <option>Street Fighter 6</option>
+            </select>    
+        </label>
+
+        <label>
+            ¿Qué te gusta más de la saga Street Fighter?
+            <input type="radio" name="likes" value="personajes" checked>Personajes
+            <input type="radio" name="likes" value="combates">Combates
+            <input type="radio" name="likes" value="combos">Combos de pelea
+            <input type="radio" name="likes" value="historia">Historia
+            <input type="radio" name="likes" value="musica">Música
+        </label>
+
+        <label>
+            ¿Por qué motivos participarías en un concurso de Street Fighter?
+            <input type="checkbox" name="why" value="combatir">Combatir competitivamente
+            <input type="checkbox" name="why" value="ganar">Generar ganancia económica
+            <input type="checkbox" name="why" value="comprar">Comprar mercancía de la saga
+            <input type="checkbox" name="why" value="compartir">Compartir con personas
+            <input type="checkbox" name="why" value="cosplay">Hacer <i>cosplay</i> de mi personaje
+        </label>
+
+        <label>
+            Resúmenos en dos líneas tu vida de luchador <i>Street Figther</i>: 
+            <textarea id="" cols="40" rows="2"></textarea>
+        </label>
+        
+        <button id="submit">Enviar</button>
+    </form>
+</body>
+</html>
